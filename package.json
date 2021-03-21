@@ -12,7 +12,8 @@
     "test": "jest -c ./config/test/jest.js --verbose",
     "test:watch": "npm run test -- --watchAll -i --no-cache",
     "build": "run-p -l type-check build:prod",
-    "build:prod": "npm run clean && webpack --config ./config/webpack/prod.js"
+    "build:prod": "npm run clean && webpack --config ./config/webpack/prod.js",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Lemoncode",
   "license": "MIT",
